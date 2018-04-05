@@ -1,0 +1,67 @@
+header{
+  background-image: url('../img/bk_header.png');
+  background-repeat: no-repeat;
+  background-size: 100% 140%;
+  background-position-y: -28px;
+}
+
+header ul{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink{
+  display: inline-block;
+}
+.navlink a{
+display: inline-block;
+color: #ccc;
+padding: 36px 18px 0;
+font-size: 17px;
+text-decoration: none;
+height: 72px !important;
+padding-top: 25px;
+}
+
+.navlink a:hover{
+  background: url('../img/bk_mainmenu.png') 0 0 repeat-x;
+}
+
+.search{
+  text-align: right;
+  padding-top: 23px;
+}
+
+.search input{
+  background-image: url('../img/bk_top_search.png');
+  padding: 9px 10px 10px;
+  border: 1px solid #2E4849;
+  color: #A8A8A8;
+  font-style: italic;
+  position: relative;
+  border-radius: 4px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  max-height: 33px;
+  transition: 1s;
+  width: 60%;
+}
+
+.search input:focus{
+  width: 100%;
+  outline: none;
+}
+
+.search::after{
+  content: "";
+  display:inline-block;
+  background-image: url('../img/but_search.png');
+  height: 43px;
+  width: 41px;
+  position: absolute;
+  top: 18px;
+  right: 6px;
+}
